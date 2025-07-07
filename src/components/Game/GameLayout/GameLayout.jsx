@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Information from '../Information/Information';
-import Field from '../Field/Field';
+import Information from './Information/Information';
+import Field from './Field/Field';
 
-import styles from './Game.module.css';
+import styles from './GameLayout.module.css';
 
 export default function GameLayout({
   currentPlayer,
@@ -24,7 +24,11 @@ export default function GameLayout({
 
       <Field field={field} onCellClick={onCellClick} />
 
-      <button type="button" onClick={onRestart} className={styles.restartButton}>
+      <button
+        type="button"
+        onClick={onRestart}
+        className={styles.restartButton}
+      >
         Начать заново
       </button>
     </div>

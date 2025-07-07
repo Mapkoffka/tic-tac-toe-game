@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Field.module.css';
+import styles from './FieldLayout.module.css';
 
 export default function FieldLayout({ field, onCellClick }) {
   return (
     <div className={styles.field}>
       {field.map((cell, i) => (
         <button
-          key={i}
           type="button"
+          key={i}
           className={styles.cell}
           onClick={() => onCellClick(i)}
           disabled={cell !== ''}
+          aria-label={`Cell ${i + 1}`}
         >
           {cell}
         </button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Information.module.css';
+import styles from './InformationLayout.module.css';
 
 export default function InformationLayout({ currentPlayer, isGameEnded, isDraw }) {
   let message = '';
