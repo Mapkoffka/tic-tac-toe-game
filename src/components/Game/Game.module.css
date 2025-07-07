@@ -1,0 +1,13 @@
+.game {
+  width: 320px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.restartButton {
+  margin-top: 15px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
